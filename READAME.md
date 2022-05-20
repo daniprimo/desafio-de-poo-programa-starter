@@ -1,23 +1,31 @@
 # Exercicios de Programação Orientada ao Objeto
 
-Exercicios 01 - Criar um objeto veiculo, e suas funções (Acelerar, frear, ligar e desligar)
+**Configuração:**
 
-O projeto contem:
+    - Todos os exercicios foram realizados no eclipse 
 
-1 - Classe chamada "Veiculo".
+    - No JDK -17
 
--  Atributos: Marca, Modelo, Placa, Cor, Km, isLigado, litrosCombustivel, Velocidade, Velocidade Maxima, preço
+**Estrutura:**
 
-Todos os Atributos estão devidamente encapsulados para facilitar a atribuição de reegras de negócio.
+    - Exercicios estão separados  dentro de um pacote. totalizando 07 pacotes dentro **src**
+
+    - Cada pacote possui um **READAME.md** com informações tecnicas e de manipulação do codigo.
+
+**Materias utilizadas**
+
+    - Foi utilizado:
+
+        - Collections
+
+        -Herança
+
+        - Interface
+
+        -Senti um pouco de dificuldade de realizar o Exercicio 03 do mago 
+
+            - Como usar o Poliformismo e a classse static
+
+            -  Ja esta no radar para estudar 
 
 
-
-- Construtor: Onde o mesmo contem como parametros todos os atributos da classe, para que o objeto seja criado
-
-
-
-- Funções: Com as seguintes funções (Acelerar, Abstecer,  Frear, Pintar, Ligar, Desligar)
-
-- 
-
-2 - Classe chamada "Aplicacao" onde está o metodo Main para que seja feita as seguintes manipulações
