@@ -42,7 +42,8 @@ public class Aplicacao {
         impacts.listaVideoGames();
         System.out.println("----------------------------");
 
-        impacts.calcularPatrimonio();
+        System.out.println(impacts.calcularPatrimonio());
+        
 
     }
 }

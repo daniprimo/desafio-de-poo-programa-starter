@@ -1,6 +1,10 @@
 package Exercicio03;
 
-public class Personagem {
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+
+public abstract class Personagem {
 
     private String nome;
     private int vida;
@@ -9,23 +13,52 @@ public class Personagem {
     private int inteligencia;
     private int forca;
     private int level;
+    private static List<String> quantidadePersonagem = new ArrayList<>();
 
-    public Personagem(String nome, int vida, int mana, float xp, int inteligencia, int forca, int level) {
+    public Personagem(String nome) {
         this.nome = nome;
-        this.vida = vida;
-        this.mana = mana;
-        this.xp = xp;
-        this.inteligencia = inteligencia;
-        this.forca = forca;
-        this.level = level;
+        
     }
+    
+    
+    
+    
+  
 
-    public String getNome() {
+	public static String getQuantidadePersonagem() {
+		
+		for (String lista :quantidadePersonagem ) {
+			System.out.println(lista);
+		}
+		
+		
+		
+		return quantidadePersonagem.size() +" personagens criados";
+		
+	}
+
+
+
+
+
+
+	public static void setQuantidadePersonagem(String string) {
+				
+		quantidadePersonagem.add(string);
+		
+	}
+
+
+
+
+
+
+	public String getNome() {
         return nome;
     }
 
     public void setNome(String nome) {
-        this.nome = nome;
+        this.nome += nome;
     }
 
     public int getVida() {
@@ -33,7 +66,7 @@ public class Personagem {
     }
 
     public void setVida(int vida) {
-        this.vida = vida;
+        this.vida += vida;
     }
 
     public int getMana() {
@@ -41,7 +74,7 @@ public class Personagem {
     }
 
     public void setMana(int mana) {
-        this.mana = mana;
+        this.mana += mana;
     }
 
     public float getXp() {
@@ -49,7 +82,7 @@ public class Personagem {
     }
 
     public void setXp(float xp) {
-        this.xp = xp;
+        this.xp += xp;
     }
 
     public int getInteligencia() {
@@ -57,7 +90,7 @@ public class Personagem {
     }
 
     public void setInteligencia(int inteligencia) {
-        this.inteligencia = inteligencia;
+        this.inteligencia += inteligencia;
     }
 
     public int getForca() {
@@ -65,18 +98,21 @@ public class Personagem {
     }
 
     public void setForca(int forca) {
-        this.forca = forca;
+        this.forca += forca;
     }
 
     public int getLevel() {
         return level;
     }
+ 
 
     public void setLevel(int level) {
-        this.level = level;
+        this.level += level;
     }
 
-    public static void lvlUp () {
-
-    }
+    
+    
+   
+    
+    
 }

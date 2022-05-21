@@ -70,17 +70,20 @@ public class Loja {
         Iterator<Livro> patrimonioLivro = livros.iterator();
         double somaLivro = 0.0;
         while (patrimonioLivro.hasNext()){
-           Double valor = patrimonioLivro.next().getPreco();
+           Double valor = patrimonioLivro.next().getTotsl();
             somaLivro += valor;
+            
         }
         Iterator<VideoGame> patrimonioGame = games.iterator();
         double somaGame = 0.0;
-        while (patrimonioLivro.hasNext()){
-            Double valor = patrimonioGame.next().getPreco();
+        while (patrimonioGame.hasNext()){
+            Double valor = patrimonioGame.next().getTotal();
             somaGame += valor;
         }
+        
+        double patrimonio = somaLivro+somaGame;
 
-        return "O patrimonio da loja "+this.nome+ " é de R$"+ somaGame+somaLivro ;
+        return "O patrimonio da loja "+this.nome+ " é de R$"+ patrimonio ;
     }
 
 }

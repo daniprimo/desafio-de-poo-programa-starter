@@ -4,6 +4,7 @@ public class VideoGame extends Produto implements Imposto {
     private String marca;
     private String modelo;
     private boolean isUsado;
+    private double total;
 
 
     public VideoGame(String nome, double preco, int quantidade,String marca, String modelo, boolean usado) {
@@ -11,6 +12,7 @@ public class VideoGame extends Produto implements Imposto {
         this.marca = marca;
         this.modelo = modelo;
         this.isUsado = usado;
+        this.total = preco*quantidade;
     }
 
     public String getMarca() {
@@ -37,6 +39,12 @@ public class VideoGame extends Produto implements Imposto {
         isUsado = usado;
     }
 
+    
+    public double getTotal() {
+        return total;
+    }
+
+    
     @Override
     public void calcularImposto() {
         if (this.isUsado == true){

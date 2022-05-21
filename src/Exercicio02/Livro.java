@@ -5,12 +5,14 @@ public class Livro extends  Produto implements Imposto {
     private String autor;
     private String tema;
     private int quantidadeDePagina;
+    private double total;
 
     public Livro(String nome, double preco, int quantidade, String autor, String tema, int quantidadeDePagina) {
         super(nome, preco, quantidade);
         this.autor = autor;
         this.tema = tema;
         this.quantidadeDePagina = quantidadeDePagina;
+        this.total = preco*quantidade;
     }
 
     public String getAutor() {
@@ -36,6 +38,11 @@ public class Livro extends  Produto implements Imposto {
     public void setQuantidadeDePagina(int quantidadeDePagina) {
         this.quantidadeDePagina = quantidadeDePagina;
     }
+    
+    public double getTotsl() {
+        return this.total;
+    }
+    
 
     @Override
     public void calcularImposto() {
