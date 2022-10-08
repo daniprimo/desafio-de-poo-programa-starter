@@ -10,6 +10,8 @@
 
     - Exercicios estão separados  dentro de um pacote. totalizando 07 pacotes dentro **src**
 
+
+
     - Cada pacote possui um **READAME.md** com informações tecnicas e de manipulação do codigo.
 
 **Materias utilizadas**
